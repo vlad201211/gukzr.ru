@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/custom-styles/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/custom-styles/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/custom-styles/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/custom-styles/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/custom-styles/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/custom-styles/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/custom-styles/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/custom-styles/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 8, ../sass/custom-styles/_base.scss */
+h3 {
+  line-height: 25px;
+  font-family: "Coda",sans-serif;
+}
+
+/* line 14, ../sass/custom-styles/_base.scss */
+#foo {
+  content: 'No Media Queries';
+}
+@media (min-width: 543px) {
+  /* line 14, ../sass/custom-styles/_base.scss */
+  #foo {
+    content: 'Basic Media Query';
+  }
+}
+@media (min-width: 456px) and (max-width: 794px) {
+  /* line 14, ../sass/custom-styles/_base.scss */
+  #foo {
+    content: 'Paired Media Query';
+  }
+}
+
+/* line 26, ../sass/custom-styles/_base.scss */
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  background-image: url("../img/body_bg_default.png") !important;
+  line-height: 18px;
+}
+
+/* line 32, ../sass/custom-styles/_base.scss */
+.container-fluid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.container-fluid:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* ╨Т╨╡╤А╤Е header */
+/* line 38, ../sass/custom-styles/_base.scss */
+.layouts-header {
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  height: 200px;
+  background-color: #FF0000;
+  margin-right: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 48, ../sass/custom-styles/_base.scss */
+.layouts-header-top {
+  background-image: url("../img/backgrounds/header_bg_default.png") !important;
+}
+
+/* line 52, ../sass/custom-styles/_base.scss */
+.logo-header {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  height: 100px;
+  background-color: #F97272;
+  margin-right: 0;
+}
+
+/* line 59, ../sass/custom-styles/_base.scss */
+.info-header {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  height: 100px;
+  background-color: #F97272;
+  margin-right: 0;
+}
+
+/* line 66, ../sass/custom-styles/_base.scss */
+.banner {
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  height: 350px;
+  background-color: #FCC;
+  margin-right: 0;
+}
+
+/* ╨Ы╨╡╨▓╨╛╨╡ ╨╝╨╡╨╜╤О */
+/* line 75, ../sass/custom-styles/_base.scss */
+.left-menu {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  min-height: 350px;
+  background-color: #DEC4C4;
+  margin-top: 10px;
+  background-image: url("../img/module_bg_default.png");
+}
+
+/* line 83, ../sass/custom-styles/_base.scss */
+.left-menu li {
+  border-bottom: 1px solid #DDD;
+  list-style: outside none none;
+}
+
+/* line 88, ../sass/custom-styles/_base.scss */
+.left-menu li {
+  font-weight: inherit;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+/* line 94, ../sass/custom-styles/_base.scss */
+.left-menu h3 {
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: 16px;
+  color: #666;
+  padding-left: 10px;
+}
+
+/* line 102, ../sass/custom-styles/_base.scss */
+.content {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  min-height: 350px;
+  background-color: #DED6D6;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+/* line 110, ../sass/custom-styles/_base.scss */
+.left-modules {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  min-height: 350px;
+  background-color: #BDA9A9;
+  margin-top: 10px;
+}
+
+/* line 117, ../sass/custom-styles/_base.scss */
+.news {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  min-height: 350px;
+  background-color: #CEC3C3;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+/* line 125, ../sass/custom-styles/_base.scss */
+.footer {
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  height: 200px;
+  background-color: #FF0000;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+/* line 133, ../sass/custom-styles/_base.scss */
+.footer-module {
+  width: 20%;
+  float: left;
+  margin-right: 5.26316%;
+  margin: 2.5%;
+}
