@@ -109,7 +109,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 #wrapper_fullscreen:after {
   content: " ";
   display: block;
@@ -164,7 +164,6 @@ p {
 
 /* line 19, ../sass/custom-styles/_header.scss */
 .logo-header img {
-  width: 250px;
   margin-right: 0;
 }
 
