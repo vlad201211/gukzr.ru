@@ -1,0 +1,22 @@
+/* Верх header */
+.layouts-header{ 
+	@include span(100%);
+	margin-right: 0;
+}
+
+.layouts-header-top{
+    background-image: url("../img/header_bg_default.png") !important;
+	background-color: transparent;
+	min-height: 70px;
+	margin-bottom: 10px;
+}
+
+.logo-header img{
+	@include span(3 of 12);
+	margin-right: 0;
+}
+
+.info-header{ 
+	@include span(last 3 of 12);
+	margin-right: 0;
+}

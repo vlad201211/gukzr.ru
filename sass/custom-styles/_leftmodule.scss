@@ -1,0 +1,19 @@
+.left-modules h3{
+	font-weight: inherit;
+	text-transform: inherit;
+	font-size: 16px;
+	color: #666666;
+	padding-left: 10px;
+	margin: 10px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #ccc;
+}
+
+.left-modules{
+	@include span( 4 of 12); 
+	min-height: 350px; 
+	background-color: #BDA9A9;
+	margin-top: 10px;
+	background-image: url("../img/module_bg_default.png");
+}

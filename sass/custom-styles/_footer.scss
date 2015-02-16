@@ -1,0 +1,52 @@
+.footer{
+	@include span(100%); 
+	min-height: 200px; 
+	margin-right: 0;
+	background-image: url("../img/footer_bg_default.png") !important;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.footer-module{
+	@include span(20%);
+	margin: 2.5%;
+}
+
+.footer-module h3{
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.footer-module p{
+	color: #999;
+}
+
+#footer-menu{
+    clear: both;
+    text-align: center;
+}
+
+#footer-menu ul{
+    margin: 0px;
+    line-height: normal;
+}
+
+#footer-menu li{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer-menu li a{
+    display: inline;
+    line-height: normal;
+    padding: 0px 10px;
+	text-decoration: underline;
+	color: #ffffff;
+	font-size: 85%;
+}
+
+#footer-copyright{
+    text-align: center;
+    font-size: 85%;
+	color: #666 !important;
+}

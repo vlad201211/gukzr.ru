@@ -1,0 +1,31 @@
+.content{ 
+	@include span(last 8 of 12); 
+	min-height: 350px;
+	margin-right: 0; 
+	margin-top: 10px;
+}
+
+.blog img{
+	border: 0px none;
+	float: left;
+	margin: 10px;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	width: 84px;
+}
+
+.blog h2{
+	text-transform: inherit;
+	font-weight: inherit;
+	color: #3B7BB9;
+	font-size: 20px;
+}
+
+.blog a{
+	text-decoration: none;
+}
+
+.blog a:hover{
+	text-decoration: underline;
+}

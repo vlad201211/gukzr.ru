@@ -3,134 +3,30 @@ $basic: 543px;
 $pair: 456px 794px;
 
 
-// Простые теги
 
-h3{
-	line-height: 25px;
-	font-family: "Coda",sans-serif;
+
+@font-face {
+    font-family: "Coda, sans-serif";
+    src: url('../fonts/coda-regular.ttf');
 }
 
 
-#foo{
-  content: 'No Media Queries';
+// Простые теги
+h3{
+	line-height: 25px;
+}
 
-  @include breakpoint($basic){
-    content: 'Basic Media Query';
-  }
-
-  @include breakpoint($pair){
-    content: 'Paired Media Query';
-  }
+h1, h2, h3{
+	font-family: "Coda";
 }
 
 body{
     font-family: Arial,Helvetica,sans-serif;
 	background-image: url("../img/body_bg_default.png") !important;
 	line-height: 18px;
+	font-size: 13px;
 }
 
-.container-fluid{
-	@include container(1200px);
-	padding: 0 1em;
-}
-
-/* Верх header */
-.layouts-header{ 
-	@include span(100%); 
-	height: 200px; 
-	background-color: #FF0000; 
-	margin-right: 0; 
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-}
-
-.layouts-header-top{
-    background-image: url("../img/backgrounds/header_bg_default.png") !important;
-}
-
-.logo-header{
-	@include span(4 of 12); 
-	height: 100px; 
-	background-color: #F97272; 
-	margin-right: 0; 
-}
-
-.info-header{ 
-	@include span(last 3 of 12); 
-	height: 100px; 
-	background-color: #F97272; 
-	margin-right: 0; 
-}
-
-.banner{ 
-	@include span(100%); 
-	height: 350px; 
-	background-color: #FCC; 
-	margin-right: 0; 
-}
-
-
-/* Левое меню */
-.left-menu{
-	@include span( 4 of 12); 
-	min-height: 350px; 
-	background-color: #DEC4C4;
-	margin-top: 10px;
-	background-image: url("../img/module_bg_default.png");
-}
-
-.left-menu li{ 
-	border-bottom: 1px solid #DDD;
-	list-style: outside none none;
-}
-
-.left-menu li{ 
-	font-weight: inherit;
-	padding-left: 10px;
-	line-height: 25px;
-}
-
-.left-menu h3{
-	font-weight: inherit;
-	text-transform: inherit;
-	font-size: 16px;
-	color: #666;
-	padding-left: 10px;
-}
-
-.content{ 
-	@include span(last 8 of 12); 
-	min-height: 350px; 
-	background-color: #DED6D6; 
-	margin-right: 0; 
-	margin-top: 10px;
-}
-
-.left-modules{
-	@include span( 4 of 12); 
-	min-height: 350px; 
-	background-color: #BDA9A9;
-	margin-top: 10px;
-}
-
-.news{
-	@include span(last 8 of 12); 
-	min-height: 350px; 
-	background-color: #CEC3C3; 
-	margin-right: 0;
-	margin-top: 10px;
-}
-
-.footer{
-	@include span(100%); 
-	height: 200px; 
-	background-color: #FF0000; 
-	margin-right: 0; 
-	margin-top: 10px;
-}
-
-.footer-module{
-	@include span(20%);
-	margin: 2.5%;
+p{
+    line-height: 18px;
 }

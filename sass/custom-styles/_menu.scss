@@ -1,0 +1,33 @@
+/* Левое меню */
+.left-menu{
+	@include span( 4 of 12); 
+	min-height: 350px; 
+	background-color: #DEC4C4;
+	margin-top: 10px;
+	background-image: url("../img/module_bg_default.png");
+}
+
+.left-menu li{ 
+	border-bottom: 1px solid #DDD;
+	list-style: outside none none;
+	font-weight: inherit;
+	padding-left: 20px;
+	line-height: 25px;
+}
+
+.left-menu li a{ 
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+.left-menu h3{
+	font-weight: inherit;
+	text-transform: inherit;
+	font-size: 16px;
+	color: #666666;
+	padding-left: 10px;
+	margin: 10px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #ccc;
+}
