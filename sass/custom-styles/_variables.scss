@@ -1,1 +1,16 @@
-$colorPrim: red;
+@font-face {
+    font-family: Cuprum;
+    src: url('../fonts/cuprum_regular.ttf');
+	font-weight: 400;
+    font-style: normal;
+}
+
+$color1: red;
+$color2: red;
+
+
+// Your basic media queries, min-width and min/max width, are super easy!
+$basic: 543px;
+$pair: 456px 794px;
+
+$fontHeaders: Cuprum;

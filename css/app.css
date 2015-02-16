@@ -53,27 +53,27 @@ table {
 }
 
 @font-face {
-  font-family: "cuprum";
+  font-family: Cuprum;
   src: url("../fonts/cuprum_regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
-/* line 17, ../sass/custom-styles/_base.scss */
+/* line 2, ../sass/custom-styles/_base.scss */
 h3 {
   line-height: 25px;
 }
 
-/* line 21, ../sass/custom-styles/_base.scss */
+/* line 6, ../sass/custom-styles/_base.scss */
 h1, h2, h3 {
-  font-family: "cuprum";
+  font-family: Cuprum;
 }
 
-/* line 25, ../sass/custom-styles/_base.scss */
+/* line 10, ../sass/custom-styles/_base.scss */
 a {
   color: #3B7BB9;
 }
 
-/* line 29, ../sass/custom-styles/_base.scss */
+/* line 14, ../sass/custom-styles/_base.scss */
 body {
   font-family: Arial,Helvetica,sans-serif;
   background-image: url("../img/body_bg_default.png") !important;
@@ -81,7 +81,7 @@ body {
   font-size: 13px;
 }
 
-/* line 36, ../sass/custom-styles/_base.scss */
+/* line 21, ../sass/custom-styles/_base.scss */
 p {
   line-height: 18px;
 }
@@ -109,7 +109,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 #wrapper_fullscreen:after {
   content: " ";
   display: block;
@@ -192,8 +192,7 @@ p {
   background-image: url("../img/module_bg_default.png");
   padding-bottom: 20px;
 }
-
-/* line 11, ../sass/custom-styles/_menu.scss */
+/* line 10, ../sass/custom-styles/_menu.scss */
 .left-menu li {
   border-bottom: 1px solid #DDD;
   list-style: outside none none;
@@ -201,24 +200,20 @@ p {
   padding-left: 20px;
   line-height: 25px;
 }
-
-/* line 19, ../sass/custom-styles/_menu.scss */
+/* line 17, ../sass/custom-styles/_menu.scss */
 .left-menu li a {
   font-weight: inherit;
   text-decoration: none;
 }
-
-/* line 24, ../sass/custom-styles/_menu.scss */
+/* line 23, ../sass/custom-styles/_menu.scss */
 .left-menu h3 {
-  font-weight: inherit;
-  text-transform: inherit;
   font-size: 18px;
   color: #666666;
   padding: 10px;
   margin: 10px;
   background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
 }
 
 /* line 1, ../sass/custom-styles/_leftmodule.scss */

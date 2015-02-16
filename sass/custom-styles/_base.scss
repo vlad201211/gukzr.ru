@@ -1,25 +1,10 @@
-// Your basic media queries, min-width and min/max width, are super easy!
-$basic: 543px;
-$pair: 456px 794px;
-
-
-
-
-@font-face {
-    font-family: "cuprum";
-    src: url('../fonts/cuprum_regular.ttf');
-	font-weight: 400;
-    font-style: normal;
-}
-
-
 // Простые теги
 h3{
 	line-height: 25px;
 }
 
 h1, h2, h3{
-	font-family: "cuprum";
+	font-family: $fontHeaders;
 }
 
 a{
