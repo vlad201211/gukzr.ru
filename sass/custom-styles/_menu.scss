@@ -2,25 +2,37 @@
 .left-menu{
 	float: left;
 	width: 100%; 
-	background-color: #DEC4C4;
+	background-color: $color_left_menu_background;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
 	padding-bottom: 20px;
 	
-	li {
-		border-bottom: 1px solid #DDD;
-		list-style: outside none none;
-		font-weight: inherit;
-		padding-left: 20px;
-		line-height: 25px;
+	
+	
+	ul{
+		padding: 10px;
 		
-		a {
+		li{
+			border-bottom: 1px solid #dddddd;
+			list-style: outside none none;
 			font-weight: inherit;
-			text-decoration: none;
+			padding-left: 10px;
+			line-height: 25px;
+
+			a{
+				font-weight: inherit;
+				text-decoration: none;
+			}
+			
+			a:hover{
+				text-decoration: underline;
+				color: #969696;
+			}
 		}
 	}
 	
-	h3 {
+	
+	h3{
 		font-size: 18px;
 		color: #666666;
 		padding: 10px;

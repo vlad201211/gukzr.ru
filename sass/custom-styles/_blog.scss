@@ -1,6 +1,5 @@
 .news{
 	@include span(last 8 of 12); 
-	min-height: 350px; 
 	margin-right: 0;
 	margin-top: 10px;
 }
@@ -22,11 +21,9 @@
 }
 
 .blog h3{
-	text-transform: inherit;
-	font-weight: inherit;
-	color: #3B7BB9;
+	color: $blog_h3_color;
 	font-size: 20px;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid $blog_h3_border_bottom;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	padding-bottom: 10px;
@@ -34,7 +31,7 @@
 
 .blog a{
 	text-decoration: none;
-	color: #3B7BB9;
+	color: $blog_a_color;
 	font-size: 24px;
 }
 
