@@ -1,31 +1,23 @@
 .content{ 
 	@include span(last 8 of 12); 
-	min-height: 350px;
 	margin-right: 0; 
 	margin-top: 10px;
 }
 
-.blog img{
+.content img{ 
 	border: 0px none;
 	float: left;
-	margin: 10px;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	width: 84px;
+	margin: 10px 10px 10px 0px;
 }
 
-.blog h2{
-	text-transform: inherit;
-	font-weight: inherit;
-	color: #3B7BB9;
-	font-size: 20px;
-}
-
-.blog a{
-	text-decoration: none;
-}
-
-.blog a:hover{
-	text-decoration: underline;
+.content h2{
+    font-weight: inherit;
+    text-transform: inherit;
+    font-size: 18px;
+    color: #666;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url("../img/module_bg_default.png");
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
 }

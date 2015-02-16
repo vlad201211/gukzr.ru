@@ -6,8 +6,10 @@ $pair: 456px 794px;
 
 
 @font-face {
-    font-family: "Coda, sans-serif";
-    src: url('../fonts/coda-regular.ttf');
+    font-family: "cuprum";
+    src: url('../fonts/cuprum_regular.ttf');
+	font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -17,7 +19,7 @@ h3{
 }
 
 h1, h2, h3{
-	font-family: "Coda";
+	font-family: "cuprum";
 }
 
 body{

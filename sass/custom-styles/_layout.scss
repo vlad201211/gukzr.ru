@@ -33,11 +33,3 @@
 .banner img{ 
 	width: 100%;
 }
-
-.news{
-	@include span(last 8 of 12); 
-	min-height: 350px; 
-	background-color: #CEC3C3; 
-	margin-right: 0;
-	margin-top: 10px;
-}

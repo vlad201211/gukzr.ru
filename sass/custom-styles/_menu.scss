@@ -1,10 +1,11 @@
 /* Левое меню */
 .left-menu{
-	@include span( 4 of 12); 
-	min-height: 350px; 
+	float: left;
+	width: 100%; 
 	background-color: #DEC4C4;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
+	padding-bottom: 20px;
 }
 
 .left-menu li{ 
@@ -23,9 +24,9 @@
 .left-menu h3{
 	font-weight: inherit;
 	text-transform: inherit;
-	font-size: 16px;
+	font-size: 18px;
 	color: #666666;
-	padding-left: 10px;
+	padding: 10px;
 	margin: 10px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #cccccc;
