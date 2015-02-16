@@ -69,6 +69,11 @@ h1, h2, h3 {
 }
 
 /* line 25, ../sass/custom-styles/_base.scss */
+a {
+  color: #3B7BB9;
+}
+
+/* line 29, ../sass/custom-styles/_base.scss */
 body {
   font-family: Arial,Helvetica,sans-serif;
   background-image: url("../img/body_bg_default.png") !important;
@@ -76,7 +81,7 @@ body {
   font-size: 13px;
 }
 
-/* line 32, ../sass/custom-styles/_base.scss */
+/* line 36, ../sass/custom-styles/_base.scss */
 p {
   line-height: 18px;
 }
@@ -114,7 +119,7 @@ p {
 /* line 18, ../sass/custom-styles/_layout.scss */
 .container-fluid {
   background-color: #ffffff;
-  padding: 0 1em;
+  padding: 0px 1em 20px 1em;
   float: left;
   margin-top: 10px;
   border-radius: 10px 10px 0px 0px;
@@ -131,6 +136,7 @@ p {
 /* line 33, ../sass/custom-styles/_layout.scss */
 .banner img {
   width: 100%;
+  box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.7);
 }
 
 /* ╨Т╨╡╤А╤Е header */
@@ -140,9 +146,10 @@ p {
   float: left;
   margin-right: 5.26316%;
   margin-right: 0;
+  margin-top: 10px;
 }
 
-/* line 7, ../sass/custom-styles/_header.scss */
+/* line 8, ../sass/custom-styles/_header.scss */
 .layouts-header-top {
   background-image: url("../img/header_bg_default.png") !important;
   background-color: transparent;
@@ -150,20 +157,29 @@ p {
   margin-bottom: 10px;
 }
 
-/* line 14, ../sass/custom-styles/_header.scss */
-.logo-header img {
-  width: 23.72881%;
+/* line 15, ../sass/custom-styles/_header.scss */
+.logo-header {
   float: left;
-  margin-right: 1.69492%;
-  margin-right: 0;
 }
 
 /* line 19, ../sass/custom-styles/_header.scss */
+.logo-header img {
+  width: 250px;
+  margin-right: 0;
+}
+
+/* line 24, ../sass/custom-styles/_header.scss */
 .info-header {
   width: 23.72881%;
   float: right;
   margin-right: 0;
   margin-right: 0;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: 18px;
+  color: #666;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* ╨Ы╨╡╨▓╨╛╨╡ ╨╝╨╡╨╜╤О */
@@ -219,7 +235,7 @@ p {
   font-size: 18px;
   color: #666666;
   padding: 10px;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 10px 10px 0px;
   background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
   border-right: 1px solid #ccc;
@@ -245,6 +261,12 @@ p {
   padding-left: 10px;
 }
 
+/* line 34, ../sass/custom-styles/_leftmodule.scss */
+.left-modules img {
+  margin: 0px 10px 10px 0px;
+  float: left;
+}
+
 /* line 1, ../sass/custom-styles/_content.scss */
 .content {
   width: 66.10169%;
@@ -258,7 +280,7 @@ p {
 .content img {
   border: 0px none;
   float: left;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 10px 10px 0px;
 }
 
 /* line 13, ../sass/custom-styles/_content.scss */
@@ -274,6 +296,11 @@ p {
   border-right: 1px solid #CCC;
 }
 
+/* line 25, ../sass/custom-styles/_content.scss */
+.content p {
+  padding-left: 10px;
+}
+
 /* line 1, ../sass/custom-styles/_blog.scss */
 .news {
   width: 66.10169%;
@@ -287,40 +314,46 @@ p {
 /* line 8, ../sass/custom-styles/_blog.scss */
 .blog {
   margin-bottom: 20px;
+  padding-left: 10px;
+  float: left;
 }
 
-/* line 12, ../sass/custom-styles/_blog.scss */
+/* line 14, ../sass/custom-styles/_blog.scss */
 .blog img {
   border: 0px none;
   float: left;
-  margin: 10px 10px 10px 0px;
+  margin: 0px 10px 10px 0px;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   width: 84px;
 }
 
-/* line 22, ../sass/custom-styles/_blog.scss */
+/* line 24, ../sass/custom-styles/_blog.scss */
 .blog h3 {
   text-transform: inherit;
   font-weight: inherit;
   color: #3B7BB9;
   font-size: 20px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* line 29, ../sass/custom-styles/_blog.scss */
+/* line 35, ../sass/custom-styles/_blog.scss */
 .blog a {
   text-decoration: none;
   color: #3B7BB9;
   font-size: 24px;
 }
 
-/* line 35, ../sass/custom-styles/_blog.scss */
+/* line 41, ../sass/custom-styles/_blog.scss */
 .blog a:hover {
   text-decoration: underline;
 }
 
-/* line 39, ../sass/custom-styles/_blog.scss */
+/* line 45, ../sass/custom-styles/_blog.scss */
 .news h2 {
   font-weight: inherit;
   text-transform: inherit;
@@ -342,9 +375,11 @@ p {
   margin-right: 0;
   background-image: url("../img/footer_bg_default.png") !important;
   border-radius: 0px 0px 10px 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-/* line 9, ../sass/custom-styles/_footer.scss */
+/* line 11, ../sass/custom-styles/_footer.scss */
 .footer-module {
   width: 20%;
   float: left;
@@ -352,37 +387,37 @@ p {
   margin: 2.5%;
 }
 
-/* line 14, ../sass/custom-styles/_footer.scss */
+/* line 16, ../sass/custom-styles/_footer.scss */
 .footer-module h3 {
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 19, ../sass/custom-styles/_footer.scss */
+/* line 21, ../sass/custom-styles/_footer.scss */
 .footer-module p {
   color: #999;
 }
 
-/* line 23, ../sass/custom-styles/_footer.scss */
+/* line 25, ../sass/custom-styles/_footer.scss */
 #footer-menu {
   clear: both;
   text-align: center;
 }
 
-/* line 28, ../sass/custom-styles/_footer.scss */
+/* line 30, ../sass/custom-styles/_footer.scss */
 #footer-menu ul {
   margin: 0px;
   line-height: normal;
 }
 
-/* line 33, ../sass/custom-styles/_footer.scss */
+/* line 35, ../sass/custom-styles/_footer.scss */
 #footer-menu li {
   display: inline;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 39, ../sass/custom-styles/_footer.scss */
+/* line 41, ../sass/custom-styles/_footer.scss */
 #footer-menu li a {
   display: inline;
   line-height: normal;
@@ -392,7 +427,7 @@ p {
   font-size: 85%;
 }
 
-/* line 48, ../sass/custom-styles/_footer.scss */
+/* line 50, ../sass/custom-styles/_footer.scss */
 #footer-copyright {
   text-align: center;
   font-size: 85%;

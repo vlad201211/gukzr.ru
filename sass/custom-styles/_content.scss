@@ -7,7 +7,7 @@
 .content img{ 
 	border: 0px none;
 	float: left;
-	margin: 10px 10px 10px 0px;
+	margin: 0px 10px 10px 0px;
 }
 
 .content h2{
@@ -20,4 +20,8 @@
     background-image: url("../img/module_bg_default.png");
     border-bottom: 1px solid #CCC;
     border-right: 1px solid #CCC;
+}
+
+.content p{
+	padding-left: 10px;
 }
