@@ -6,16 +6,17 @@
 	border: 0px none;
 	float: left;
 	margin: 0px 10px 10px 0px;
+	max-width: 100%;
 }
 
 .content h2{
     font-size: 18px;
     color: $color_main3;
-    padding: 10px;
     margin-bottom: 10px;
     background-image: url("../img/module_bg_default.png");
     border-bottom: 1px solid $color_main1;
     border-right: 1px solid $color_main1;
+	padding: 10px 10px 10px 20px;
 }
 
 .content p{

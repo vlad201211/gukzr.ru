@@ -36,7 +36,7 @@
 
 .left-module {
 	@include span(12 of 12);
-	@include breakpoint (600px) {
+	@include breakpoint (600px){
 		@include span(4 of 12);
 	}
 	
@@ -45,7 +45,19 @@
 .content {
 	margin-right: 0; 
 	margin-top: 10px;
-	@include breakpoint (600px) {
+	@include span(12 of 12);
+	@include breakpoint (600px){
 		@include span(8 of 12 last); 
 	}
+}
+
+.menu_click{
+	float: right;
+	width: 24px;
+	cursor: pointer;
+	
+	@include breakpoint (600px){
+		display: none;
+	}
+	
 }

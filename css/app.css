@@ -106,7 +106,7 @@ p {
   margin-top: 10px;
   border-radius: 10px 10px 0px 0px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 #wrapper_fullscreen:after {
   content: " ";
   display: block;
@@ -144,7 +144,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .page:after {
   content: " ";
   display: block;
@@ -171,6 +171,10 @@ p {
 .content {
   margin-right: 0;
   margin-top: 10px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media (min-width: 600px) {
   /* line 45, ../sass/custom-styles/_layout.scss */
@@ -178,6 +182,19 @@ p {
     width: 66.10169%;
     float: right;
     margin-right: 0;
+  }
+}
+
+/* line 54, ../sass/custom-styles/_layout.scss */
+.menu_click {
+  float: right;
+  width: 24px;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  /* line 54, ../sass/custom-styles/_layout.scss */
+  .menu_click {
+    display: none;
   }
 }
 
@@ -201,7 +218,7 @@ p {
   min-height: 70px;
   margin-bottom: 10px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .layouts-header-top:after {
   content: " ";
   display: block;
@@ -215,10 +232,14 @@ p {
 
 /* line 20, ../sass/custom-styles/_header.scss */
 .logo-header img {
+  width: 100%;
+  float: left;
+  margin-left: 0;
   margin-right: 0;
+  max-width: 100%;
 }
 
-/* line 26, ../sass/custom-styles/_header.scss */
+/* line 27, ../sass/custom-styles/_header.scss */
 .info-header {
   font-size: 18px;
   color: #666666;
@@ -226,41 +247,43 @@ p {
   margin: 10px;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
-  /* line 33, ../sass/custom-styles/_header.scss */
-  .info-header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-    margin-right: 0;
-  }
+/* line 34, ../sass/custom-styles/_header.scss */
+.info-header {
+  	/*
+  	@include breakpoint($ExtraSmallDevices) {
+  		@include span(last 12 of 12);
+  		margin-right: 0;
+  	}
+  	
+  	@include breakpoint($SmallDevices) {
+  		@include span(last 6 of 12);
+  		margin-right: 0;
+  	}
+  
+  	@include breakpoint($MediumDevices) {
+  		@include span(last 3 of 12);
+  		margin-right: 0;
+  		display: none;
+  	}
+    
+  	@include breakpoint($LargeDevices) {
+  		@include span(last 3 of 12);
+  		margin-right: 0;
+  	}*/
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  white-space: nowrap;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  /* line 33, ../sass/custom-styles/_header.scss */
+@media (min-width: 750px) {
+  /* line 34, ../sass/custom-styles/_header.scss */
   .info-header {
-    width: 49.15254%;
+    width: 32.20339%;
     float: right;
     margin-right: 0;
-    margin-right: 0;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  /* line 33, ../sass/custom-styles/_header.scss */
-  .info-header {
-    width: 23.72881%;
-    float: right;
-    margin-right: 0;
-    margin-right: 0;
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 33, ../sass/custom-styles/_header.scss */
-  .info-header {
-    width: 23.72881%;
-    float: right;
-    margin-right: 0;
-    margin-right: 0;
+    text-align: right;
   }
 }
 
@@ -277,24 +300,31 @@ p {
 /* line 12, ../sass/custom-styles/_menu.scss */
 .left-menu ul {
   padding: 10px;
+  display: none;
 }
-/* line 15, ../sass/custom-styles/_menu.scss */
+@media (min-width: 600px) {
+  /* line 12, ../sass/custom-styles/_menu.scss */
+  .left-menu ul {
+    display: block;
+  }
+}
+/* line 19, ../sass/custom-styles/_menu.scss */
 .left-menu ul li {
   border-bottom: 1px solid #dddddd;
   list-style: outside none none;
   padding-left: 10px;
   line-height: 25px;
 }
-/* line 21, ../sass/custom-styles/_menu.scss */
+/* line 25, ../sass/custom-styles/_menu.scss */
 .left-menu ul li a {
   text-decoration: none;
 }
-/* line 25, ../sass/custom-styles/_menu.scss */
+/* line 29, ../sass/custom-styles/_menu.scss */
 .left-menu ul li a:hover {
   text-decoration: underline;
   color: #969696;
 }
-/* line 33, ../sass/custom-styles/_menu.scss */
+/* line 37, ../sass/custom-styles/_menu.scss */
 .left-menu h3 {
   font-size: 18px;
   color: #666666;
@@ -318,29 +348,41 @@ p {
 
 /* line 15, ../sass/custom-styles/_leftmodule.scss */
 .left-modules {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   background-color: #bda9a9;
   margin-top: 10px;
   background-image: url("../img/module_bg_default.png");
   float: left;
-  width: 100%;
   padding-top: 10px;
 }
+@media (min-width: 600px) {
+  /* line 15, ../sass/custom-styles/_leftmodule.scss */
+  .left-modules {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
 
-/* line 25, ../sass/custom-styles/_leftmodule.scss */
+/* line 27, ../sass/custom-styles/_leftmodule.scss */
 .left-modules p {
   padding-right: 10px;
 }
 
-/* line 29, ../sass/custom-styles/_leftmodule.scss */
+/* line 31, ../sass/custom-styles/_leftmodule.scss */
 .left-modules .row {
   margin-bottom: 30px;
   padding-left: 10px;
 }
 
-/* line 34, ../sass/custom-styles/_leftmodule.scss */
+/* line 36, ../sass/custom-styles/_leftmodule.scss */
 .left-modules img {
   margin: 0px 10px 10px 0px;
   float: left;
+  max-width: 100%;
 }
 
 /* line 5, ../sass/custom-styles/_content.scss */
@@ -348,20 +390,21 @@ p {
   border: 0px none;
   float: left;
   margin: 0px 10px 10px 0px;
+  max-width: 100%;
 }
 
-/* line 11, ../sass/custom-styles/_content.scss */
+/* line 12, ../sass/custom-styles/_content.scss */
 .content h2 {
   font-size: 18px;
   color: #666666;
-  padding: 10px;
   margin-bottom: 10px;
   background-image: url("../img/module_bg_default.png");
   border-bottom: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
+  padding: 10px 10px 10px 20px;
 }
 
-/* line 21, ../sass/custom-styles/_content.scss */
+/* line 22, ../sass/custom-styles/_content.scss */
 .content p {
   padding-left: 10px;
 }
@@ -416,7 +459,7 @@ p {
 .news h2 {
   font-size: 18px;
   color: #666666;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   margin-bottom: 10px;
   background-image: url("../img/module_bg_default.png");
   border-bottom: 1px solid #cccccc;
@@ -434,13 +477,17 @@ p {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .footer:after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/* line 10, ../sass/custom-styles/_footer.scss */
+.footer-module {
+  padding: 20px;
+}
 @media (min-width: 600px) {
   /* line 10, ../sass/custom-styles/_footer.scss */
   .footer-module {
@@ -448,40 +495,41 @@ p {
     float: left;
     margin-right: 5.26316%;
     margin: 2.5%;
+    padding: 0px;
   }
 }
 
-/* line 17, ../sass/custom-styles/_footer.scss */
+/* line 19, ../sass/custom-styles/_footer.scss */
 .footer-module h3 {
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 22, ../sass/custom-styles/_footer.scss */
+/* line 24, ../sass/custom-styles/_footer.scss */
 .footer-module p {
   color: #999999;
 }
 
-/* line 26, ../sass/custom-styles/_footer.scss */
+/* line 28, ../sass/custom-styles/_footer.scss */
 #footer-menu {
   clear: both;
   text-align: center;
 }
 
-/* line 31, ../sass/custom-styles/_footer.scss */
+/* line 33, ../sass/custom-styles/_footer.scss */
 #footer-menu ul {
   margin: 0px;
   line-height: normal;
 }
 
-/* line 36, ../sass/custom-styles/_footer.scss */
+/* line 38, ../sass/custom-styles/_footer.scss */
 #footer-menu li {
   display: inline;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 42, ../sass/custom-styles/_footer.scss */
+/* line 44, ../sass/custom-styles/_footer.scss */
 #footer-menu li a {
   display: inline;
   line-height: normal;
@@ -491,7 +539,7 @@ p {
   font-size: 85%;
 }
 
-/* line 51, ../sass/custom-styles/_footer.scss */
+/* line 53, ../sass/custom-styles/_footer.scss */
 #footer-copyright {
   text-align: center;
   font-size: 85%;

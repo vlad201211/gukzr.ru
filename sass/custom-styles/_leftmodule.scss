@@ -13,12 +13,14 @@
 }
 
 .left-modules {
-	//@include span(isolate 4 of 12 at 1); 
+	@include span(12 of 12);
+	@include breakpoint (600px) {
+		@include span(4 of 12);
+	}
 	background-color: $color_main8;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
 	float: left;
-	width: 100%;
 	padding-top: 10px;
 }
 
@@ -34,4 +36,5 @@
 .left-modules img{
 	margin: 0px 10px 10px 0px;
 	float: left;
+	max-width: 100%;
 }

@@ -9,6 +9,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" href="css/app.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	
+		<script type="text/javascript">
+                var bool_menu = true;
+                // Выпадающее меню
+                jQuery(document).ready(function(){
+					
+					jQuery('.menu_click').click( function () {
+						
+						if(jQuery('.left-menu .menu').css('display')=='none'){
+							clearTimeout(jQuery.data(this,'timer'));
+							jQuery('.left-menu .menu').stop(true,true).slideDown(200);
+						}else{
+							jQuery.data(this,'timer', setTimeout(jQuery.proxy(function() {
+								jQuery('.left-menu .menu').stop(true,true).slideUp(200);
+							}, this), 100));
+						}
+
+						if(bool_menu) bool_menu = false;
+						else bool_menu = true;
+
+
+					});
+                });
+		</script>
+	
+	
 </head>
 
 <body>
@@ -41,17 +70,17 @@
 			<div class="left-module">
 				<!-- Меню -->
 				<div class="left-menu">
-					<h3>Меню</h3>
-					<ul class="">
-						<li><a href="/">Example menu item1</a></li>
-						<li><a href="/">Example menu item2</a></li>
-						<li><a href="/">Example menu item3</a></li>
-						<li><a href="/">Example menu item4</a></li>
+					<h3>Меню<img class="menu_click" src="img/menu_list.png"></h3>
+					<ul class="menu">
+						<li><a href="#">Example menu item1</a></li>
+						<li><a href="#">Example menu item2</a></li>
+						<li><a href="#">Example menu item3</a></li>
+						<li><a href="#">Example menu item4</a></li>
 					</ul>
 				</div>
 
-				<!-- Модуль для текста -->
-
+				
+				
 			
 			</div>
 			
