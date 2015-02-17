@@ -1,22 +1,12 @@
 
-#foo{
-  content: 'No Media Queries';
 
-  @include breakpoint($basic){
-    content: 'Basic Media Query';
-  }
-
-  @include breakpoint($pair){
-    content: 'Paired Media Query';
-  }
-}
 
 #wrapper_fullscreen{
 	@include container(1200px);
 }
 
 .container-fluid{
-	background-color: #ffffff;
+	background-color: $color_main7;
 	padding: 0px 1em 20px 1em;
 	float: left;
 	margin-top: 10px;
@@ -33,4 +23,5 @@
 .banner img{ 
 	width: 100%;
 	box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.7);
+	padding: 2px;
 }

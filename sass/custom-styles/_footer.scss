@@ -2,7 +2,7 @@
 	@include span(100%); 
 	min-height: 200px; 
 	margin-right: 0;
-	background-image: url("../img/footer_bg_default.png") !important;
+	background-image: url("../img/footer_bg_default.png");
 	border-radius: 0px 0px 10px 10px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
@@ -15,11 +15,11 @@
 
 .footer-module h3{
 	font-size: 14px;
-	color: #ffffff;
+	color: $color_main7;
 }
 
 .footer-module p{
-	color: #999;
+	color: $color_main9;
 }
 
 #footer-menu{
@@ -43,12 +43,12 @@
     line-height: normal;
     padding: 0px 10px;
 	text-decoration: underline;
-	color: #ffffff;
+	color: $color_main7;
 	font-size: 85%;
 }
 
 #footer-copyright{
     text-align: center;
     font-size: 85%;
-	color: #666 !important;
+	color: $color_main3;
 }

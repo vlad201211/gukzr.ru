@@ -6,7 +6,7 @@
 }
 
 .layouts-header-top{
-    background-image: url("../img/header_bg_default.png") !important;
+    background-image: url("../img/header_bg_default.png");
 	background-color: transparent;
 	min-height: 70px;
 	margin-bottom: 10px;
@@ -21,13 +21,35 @@
 	margin-right: 0;
 }
 
+
 .info-header{ 
-	@include span(last 3 of 12);
-	margin-right: 0;
-	font-weight: inherit;
-	text-transform: inherit;
 	font-size: 18px;
-	color: #666;
+	color: $color_main3;
 	padding: 10px;
 	margin: 10px;
+}
+
+
+#info-header{
+	
+  @include breakpoint($ExtraSmallDevices){
+    @include span(last 12 of 12);
+	margin-right: 0;
+  }
+
+  @include breakpoint($SmallDevices){
+    @include span(last 6 of 12);
+	margin-right: 0;
+  }
+
+  @include breakpoint($MediumDevices){
+    @include span(last 3 of 12);
+	margin-right: 0;
+	display: none;
+  }
+  
+  @include breakpoint($LargeDevices){
+    @include span(last 3 of 12);
+	margin-right: 0;
+  }
 }

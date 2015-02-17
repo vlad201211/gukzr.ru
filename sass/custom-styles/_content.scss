@@ -11,15 +11,13 @@
 }
 
 .content h2{
-    font-weight: inherit;
-    text-transform: inherit;
     font-size: 18px;
-    color: #666;
+    color: $color_main3;
     padding: 10px;
     margin-bottom: 10px;
     background-image: url("../img/module_bg_default.png");
-    border-bottom: 1px solid #CCC;
-    border-right: 1px solid #CCC;
+    border-bottom: 1px solid $color_main1;
+    border-right: 1px solid $color_main1;
 }
 
 .content p{

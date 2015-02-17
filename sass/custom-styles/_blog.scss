@@ -21,9 +21,9 @@
 }
 
 .blog h3{
-	color: $blog_h3_color;
+	color: $color_main2;
 	font-size: 20px;
-	border-bottom: 1px solid $blog_h3_border_bottom;
+	border-bottom: 1px solid $color_main1;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	padding-bottom: 10px;
@@ -31,7 +31,7 @@
 
 .blog a{
 	text-decoration: none;
-	color: $blog_a_color;
+	color: $color_main2;
 	font-size: 24px;
 }
 
@@ -40,13 +40,11 @@
 }
 
 .news h2{
-    font-weight: inherit;
-    text-transform: inherit;
     font-size: 18px;
-    color: #666;
+    color: $color_main3;
     padding: 10px;
     margin-bottom: 10px;
     background-image: url("../img/module_bg_default.png");
-    border-bottom: 1px solid #CCC;
-    border-right: 1px solid #CCC;
+    border-bottom: 1px solid $color_main1;
+    border-right: 1px solid $color_main1;
 }

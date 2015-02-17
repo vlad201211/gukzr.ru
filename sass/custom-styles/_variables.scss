@@ -5,16 +5,21 @@
     font-style: normal;
 }
 
-$color1: red;
-$color2: red;
+$color_main1:	#cccccc;
+$color_main2:	#3b7bb9;
+$color_main3:	#666666;
+$color_main4:	#dec4c4;
+$color_main5:	#dddddd;
+$color_main6:	#969696;
+$color_main7:	#ffffff;
+$color_main8:	#bda9a9;
+$color_main9:	#999999;
 
-$color_left_menu_background: #dec4c4;
-$blog_h3_color:				 #3B7BB9;
-$blog_h3_border_bottom:		 #cccccc;
-$blog_a_color:				 #3b7bb9;
 
 // Your basic media queries, min-width and min/max width, are super easy!
-$basic: 543px;
-$pair: 456px 794px;
+$ExtraSmallDevices: 0px 768px;
+$SmallDevices:		768px 992px;
+$MediumDevices:		992px 1200px;
+$LargeDevices:		1200px;
 
 $fontHeaders: Cuprum;

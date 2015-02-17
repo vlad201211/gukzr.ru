@@ -2,7 +2,7 @@
 .left-menu{
 	float: left;
 	width: 100%; 
-	background-color: $color_left_menu_background;
+	background-color: $color_main4;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
 	padding-bottom: 20px;
@@ -13,20 +13,18 @@
 		padding: 10px;
 		
 		li{
-			border-bottom: 1px solid #dddddd;
+			border-bottom: 1px solid $color_main5;
 			list-style: outside none none;
-			font-weight: inherit;
 			padding-left: 10px;
 			line-height: 25px;
 
 			a{
-				font-weight: inherit;
 				text-decoration: none;
 			}
 			
 			a:hover{
 				text-decoration: underline;
-				color: #969696;
+				color: $color_main6;
 			}
 		}
 	}
@@ -34,11 +32,11 @@
 	
 	h3{
 		font-size: 18px;
-		color: #666666;
+		color: $color_main3;
 		padding: 10px;
 		margin: 10px;
-		background-color: #ffffff;
-		border-bottom: 1px solid #cccccc;
-		border-right: 1px solid #cccccc;
+		background-color: $color_main7;
+		border-bottom: 1px solid $color_main1;
+		border-right: 1px solid $color_main1;
 	}
 }
