@@ -59,21 +59,31 @@ table {
   font-style: normal;
 }
 /* line 2, ../sass/custom-styles/_base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/custom-styles/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 12, ../sass/custom-styles/_base.scss */
 h3 {
   line-height: 25px;
 }
 
-/* line 6, ../sass/custom-styles/_base.scss */
+/* line 16, ../sass/custom-styles/_base.scss */
 h1, h2, h3 {
   font-family: Cuprum;
 }
 
-/* line 10, ../sass/custom-styles/_base.scss */
+/* line 20, ../sass/custom-styles/_base.scss */
 a {
   color: #3b7bb9;
 }
 
-/* line 14, ../sass/custom-styles/_base.scss */
+/* line 24, ../sass/custom-styles/_base.scss */
 body {
   font-family: Arial,Helvetica,sans-serif;
   background-image: url("../img/body_bg_default.png");
@@ -81,16 +91,20 @@ body {
   font-size: 13px;
 }
 
-/* line 21, ../sass/custom-styles/_base.scss */
+/* line 31, ../sass/custom-styles/_base.scss */
 p {
   line-height: 18px;
 }
 
-/* line 4, ../sass/custom-styles/_layout.scss */
+/* line 1, ../sass/custom-styles/_layout.scss */
 #wrapper_fullscreen {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ffffff;
+  padding: 0px 1em 20px 1em;
+  margin-top: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 /* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 #wrapper_fullscreen:after {
@@ -99,16 +113,17 @@ p {
   clear: both;
 }
 
-/* line 8, ../sass/custom-styles/_layout.scss */
+/*
 .container-fluid {
-  background-color: #ffffff;
-  padding: 0px 1em 20px 1em;
-  float: left;
-  margin-top: 10px;
-  border-radius: 10px 10px 0px 0px;
+	@include container;
+	background-color: $color_main7;
+	padding: 0px 1em 20px 1em;
+	float: left;
+	margin-top: 10px;
+	border-radius: 10px 10px 0px 0px;
 }
-
-/* line 18, ../sass/custom-styles/_layout.scss */
+*/
+/* line 21, ../sass/custom-styles/_layout.scss */
 .banner {
   width: 100%;
   float: left;
@@ -116,11 +131,54 @@ p {
   margin-right: 0;
 }
 
-/* line 23, ../sass/custom-styles/_layout.scss */
+/* line 26, ../sass/custom-styles/_layout.scss */
 .banner img {
   width: 100%;
   box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.7);
   padding: 2px;
+}
+
+/* line 32, ../sass/custom-styles/_layout.scss */
+.page {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.page:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 37, ../sass/custom-styles/_layout.scss */
+.left-module {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 600px) {
+  /* line 37, ../sass/custom-styles/_layout.scss */
+  .left-module {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+/* line 45, ../sass/custom-styles/_layout.scss */
+.content {
+  margin-right: 0;
+  margin-top: 10px;
+}
+@media (min-width: 600px) {
+  /* line 45, ../sass/custom-styles/_layout.scss */
+  .content {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+  }
 }
 
 /* ╨Т╨╡╤А╤Е header */
@@ -135,23 +193,32 @@ p {
 
 /* line 8, ../sass/custom-styles/_header.scss */
 .layouts-header-top {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../img/header_bg_default.png");
   background-color: transparent;
   min-height: 70px;
   margin-bottom: 10px;
 }
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.layouts-header-top:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
-/* line 15, ../sass/custom-styles/_header.scss */
+/* line 16, ../sass/custom-styles/_header.scss */
 .logo-header {
   float: left;
 }
 
-/* line 19, ../sass/custom-styles/_header.scss */
+/* line 20, ../sass/custom-styles/_header.scss */
 .logo-header img {
   margin-right: 0;
 }
 
-/* line 25, ../sass/custom-styles/_header.scss */
+/* line 26, ../sass/custom-styles/_header.scss */
 .info-header {
   font-size: 18px;
   color: #666666;
@@ -161,7 +228,7 @@ p {
 
 @media (min-width: 0px) and (max-width: 768px) {
   /* line 33, ../sass/custom-styles/_header.scss */
-  #info-header {
+  .info-header {
     width: 100%;
     float: right;
     margin-right: 0;
@@ -170,7 +237,7 @@ p {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   /* line 33, ../sass/custom-styles/_header.scss */
-  #info-header {
+  .info-header {
     width: 49.15254%;
     float: right;
     margin-right: 0;
@@ -179,7 +246,7 @@ p {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 33, ../sass/custom-styles/_header.scss */
-  #info-header {
+  .info-header {
     width: 23.72881%;
     float: right;
     margin-right: 0;
@@ -189,7 +256,7 @@ p {
 }
 @media (min-width: 1200px) {
   /* line 33, ../sass/custom-styles/_header.scss */
-  #info-header {
+  .info-header {
     width: 23.72881%;
     float: right;
     margin-right: 0;
@@ -238,13 +305,6 @@ p {
   border-right: 1px solid #cccccc;
 }
 
-/* line 1, ../sass/custom-styles/_leftmodule.scss */
-.left-module {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
 /* line 5, ../sass/custom-styles/_leftmodule.scss */
 .left-modules h3 {
   font-size: 18px;
@@ -266,40 +326,31 @@ p {
   padding-top: 10px;
 }
 
-/* line 24, ../sass/custom-styles/_leftmodule.scss */
+/* line 25, ../sass/custom-styles/_leftmodule.scss */
 .left-modules p {
   padding-right: 10px;
 }
 
-/* line 28, ../sass/custom-styles/_leftmodule.scss */
+/* line 29, ../sass/custom-styles/_leftmodule.scss */
 .left-modules .row {
   margin-bottom: 30px;
   padding-left: 10px;
 }
 
-/* line 33, ../sass/custom-styles/_leftmodule.scss */
+/* line 34, ../sass/custom-styles/_leftmodule.scss */
 .left-modules img {
   margin: 0px 10px 10px 0px;
   float: left;
 }
 
-/* line 1, ../sass/custom-styles/_content.scss */
-.content {
-  width: 66.10169%;
-  float: right;
-  margin-right: 0;
-  margin-right: 0;
-  margin-top: 10px;
-}
-
-/* line 7, ../sass/custom-styles/_content.scss */
+/* line 5, ../sass/custom-styles/_content.scss */
 .content img {
   border: 0px none;
   float: left;
   margin: 0px 10px 10px 0px;
 }
 
-/* line 13, ../sass/custom-styles/_content.scss */
+/* line 11, ../sass/custom-styles/_content.scss */
 .content h2 {
   font-size: 18px;
   color: #666666;
@@ -310,28 +361,25 @@ p {
   border-right: 1px solid #cccccc;
 }
 
-/* line 23, ../sass/custom-styles/_content.scss */
+/* line 21, ../sass/custom-styles/_content.scss */
 .content p {
   padding-left: 10px;
 }
 
 /* line 1, ../sass/custom-styles/_blog.scss */
 .news {
-  width: 66.10169%;
-  float: right;
-  margin-right: 0;
   margin-right: 0;
   margin-top: 10px;
 }
 
-/* line 7, ../sass/custom-styles/_blog.scss */
+/* line 6, ../sass/custom-styles/_blog.scss */
 .blog {
   margin-bottom: 20px;
   padding-left: 10px;
   float: left;
 }
 
-/* line 13, ../sass/custom-styles/_blog.scss */
+/* line 12, ../sass/custom-styles/_blog.scss */
 .blog img {
   border: 0px none;
   float: left;
@@ -342,7 +390,7 @@ p {
   width: 84px;
 }
 
-/* line 23, ../sass/custom-styles/_blog.scss */
+/* line 22, ../sass/custom-styles/_blog.scss */
 .blog h3 {
   color: #3b7bb9;
   font-size: 20px;
@@ -352,19 +400,19 @@ p {
   padding-bottom: 10px;
 }
 
-/* line 32, ../sass/custom-styles/_blog.scss */
+/* line 31, ../sass/custom-styles/_blog.scss */
 .blog a {
   text-decoration: none;
   color: #3b7bb9;
   font-size: 24px;
 }
 
-/* line 38, ../sass/custom-styles/_blog.scss */
+/* line 37, ../sass/custom-styles/_blog.scss */
 .blog a:hover {
   text-decoration: underline;
 }
 
-/* line 42, ../sass/custom-styles/_blog.scss */
+/* line 41, ../sass/custom-styles/_blog.scss */
 .news h2 {
   font-size: 18px;
   color: #666666;
@@ -377,56 +425,63 @@ p {
 
 /* line 1, ../sass/custom-styles/_footer.scss */
 .footer {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 200px;
-  margin-right: 0;
   background-image: url("../img/footer_bg_default.png");
   border-radius: 0px 0px 10px 10px;
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-
-/* line 11, ../sass/custom-styles/_footer.scss */
-.footer-module {
-  width: 20%;
-  float: left;
-  margin-right: 5.26316%;
-  margin: 2.5%;
+/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.footer:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
-/* line 16, ../sass/custom-styles/_footer.scss */
+@media (min-width: 600px) {
+  /* line 10, ../sass/custom-styles/_footer.scss */
+  .footer-module {
+    width: 20%;
+    float: left;
+    margin-right: 5.26316%;
+    margin: 2.5%;
+  }
+}
+
+/* line 17, ../sass/custom-styles/_footer.scss */
 .footer-module h3 {
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 21, ../sass/custom-styles/_footer.scss */
+/* line 22, ../sass/custom-styles/_footer.scss */
 .footer-module p {
   color: #999999;
 }
 
-/* line 25, ../sass/custom-styles/_footer.scss */
+/* line 26, ../sass/custom-styles/_footer.scss */
 #footer-menu {
   clear: both;
   text-align: center;
 }
 
-/* line 30, ../sass/custom-styles/_footer.scss */
+/* line 31, ../sass/custom-styles/_footer.scss */
 #footer-menu ul {
   margin: 0px;
   line-height: normal;
 }
 
-/* line 35, ../sass/custom-styles/_footer.scss */
+/* line 36, ../sass/custom-styles/_footer.scss */
 #footer-menu li {
   display: inline;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 41, ../sass/custom-styles/_footer.scss */
+/* line 42, ../sass/custom-styles/_footer.scss */
 #footer-menu li a {
   display: inline;
   line-height: normal;
@@ -436,7 +491,7 @@ p {
   font-size: 85%;
 }
 
-/* line 50, ../sass/custom-styles/_footer.scss */
+/* line 51, ../sass/custom-styles/_footer.scss */
 #footer-copyright {
   text-align: center;
   font-size: 85%;

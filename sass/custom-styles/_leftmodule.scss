@@ -1,5 +1,5 @@
 .left-module{
-	@include span( 4 of 12); 
+
 }
 
 .left-modules h3{
@@ -12,7 +12,8 @@
 	border-right: 1px solid $color_main1;
 }
 
-.left-modules{
+.left-modules {
+	//@include span(isolate 4 of 12 at 1); 
 	background-color: $color_main8;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");

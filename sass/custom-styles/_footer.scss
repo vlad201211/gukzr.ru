@@ -1,16 +1,17 @@
 .footer{
-	@include span(100%); 
+	@include container(1200px); 
 	min-height: 200px; 
-	margin-right: 0;
 	background-image: url("../img/footer_bg_default.png");
 	border-radius: 0px 0px 10px 10px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
 
-.footer-module{
-	@include span(20%);
-	margin: 2.5%;
+.footer-module {
+	@include breakpoint (600px) {
+		@include span(20%);
+		margin: 2.5%;
+	}	
 }
 
 .footer-module h3{

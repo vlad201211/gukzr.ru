@@ -1,12 +1,13 @@
 /* Верх header */
-.layouts-header{ 
+.layouts-header { 
 	@include span(100%);
 	margin-right: 0;
 	margin-top: 10px;
 }
 
-.layouts-header-top{
-    background-image: url("../img/header_bg_default.png");
+.layouts-header-top {
+	@include container;
+	background-image: url("../img/header_bg_default.png");
 	background-color: transparent;
 	min-height: 70px;
 	margin-bottom: 10px;
@@ -29,27 +30,27 @@
 	margin: 10px;
 }
 
-
-#info-header{
+.info-header {
 	
-  @include breakpoint($ExtraSmallDevices){
-    @include span(last 12 of 12);
-	margin-right: 0;
-  }
+	@include breakpoint($ExtraSmallDevices) {
+		@include span(last 12 of 12);
+		margin-right: 0;
+	}
+	
+	@include breakpoint($SmallDevices) {
+		@include span(last 6 of 12);
+		margin-right: 0;
+	}
 
-  @include breakpoint($SmallDevices){
-    @include span(last 6 of 12);
-	margin-right: 0;
-  }
-
-  @include breakpoint($MediumDevices){
-    @include span(last 3 of 12);
-	margin-right: 0;
-	display: none;
-  }
+	@include breakpoint($MediumDevices) {
+		@include span(last 3 of 12);
+		margin-right: 0;
+		display: none;
+	}
   
-  @include breakpoint($LargeDevices){
-    @include span(last 3 of 12);
-	margin-right: 0;
-  }
+	@include breakpoint($LargeDevices) {
+		@include span(last 3 of 12);
+		margin-right: 0;
+	}
+	
 }
