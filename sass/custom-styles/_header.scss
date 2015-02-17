@@ -18,8 +18,9 @@
 }
 
 .logo-header img{
-	//width: 250px;
-	margin-right: 0;
+	//1width: 250px;
+	@include span(12 of 12);
+	max-width: 100%;
 }
 
 
@@ -31,7 +32,7 @@
 }
 
 .info-header {
-	
+	/*
 	@include breakpoint($ExtraSmallDevices) {
 		@include span(last 12 of 12);
 		margin-right: 0;
@@ -51,6 +52,14 @@
 	@include breakpoint($LargeDevices) {
 		@include span(last 3 of 12);
 		margin-right: 0;
+	}*/
+	
+	@include span(12 of 12);
+	text-align: center;
+	white-space: nowrap; 
+	@include breakpoint (750px) {
+		@include span(last 4 of 12);
+		text-align: right;
 	}
 	
 }
