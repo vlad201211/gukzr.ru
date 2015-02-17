@@ -53,10 +53,17 @@
 
 .menu_click{
 	cursor: pointer;
+	@include breakpoint (600px){
+		cursor: default;
+	}
 }
 
-.menu_click img{
+.menu_click span{
 	float: left;
-	width: 24px;
 	margin-right: 10px;
+	display: block;
+	@include breakpoint (600px){
+		display: none;
+	}
+	
 }

@@ -89,9 +89,10 @@ body {
   background-image: url("../img/body_bg_default.png");
   line-height: 18px;
   font-size: 13px;
+  margin: 0 2%;
 }
 
-/* line 31, ../sass/custom-styles/_base.scss */
+/* line 32, ../sass/custom-styles/_base.scss */
 p {
   line-height: 18px;
 }
@@ -106,7 +107,7 @@ p {
   margin-top: 10px;
   border-radius: 10px 10px 0px 0px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 #wrapper_fullscreen:after {
   content: " ";
   display: block;
@@ -144,7 +145,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .page:after {
   content: " ";
   display: block;
@@ -189,12 +190,24 @@ p {
 .menu_click {
   cursor: pointer;
 }
+@media (min-width: 600px) {
+  /* line 54, ../sass/custom-styles/_layout.scss */
+  .menu_click {
+    cursor: default;
+  }
+}
 
-/* line 58, ../sass/custom-styles/_layout.scss */
-.menu_click img {
+/* line 61, ../sass/custom-styles/_layout.scss */
+.menu_click span {
   float: left;
-  width: 24px;
   margin-right: 10px;
+  display: block;
+}
+@media (min-width: 600px) {
+  /* line 61, ../sass/custom-styles/_layout.scss */
+  .menu_click span {
+    display: none;
+  }
 }
 
 /* ╨Т╨╡╤А╤Е header */
@@ -217,7 +230,7 @@ p {
   min-height: 70px;
   margin-bottom: 10px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .layouts-header-top:after {
   content: " ";
   display: block;
@@ -298,7 +311,6 @@ p {
 /* line 11, ../sass/custom-styles/_menu.scss */
 .left-menu ul {
   padding: 10px;
-  display: none;
   padding-bottom: 30px;
 }
 @media (min-width: 600px) {
@@ -307,23 +319,23 @@ p {
     display: block;
   }
 }
-/* line 19, ../sass/custom-styles/_menu.scss */
+/* line 18, ../sass/custom-styles/_menu.scss */
 .left-menu ul li {
   border-bottom: 1px solid #dddddd;
   list-style: outside none none;
   padding-left: 10px;
   line-height: 25px;
 }
-/* line 25, ../sass/custom-styles/_menu.scss */
+/* line 24, ../sass/custom-styles/_menu.scss */
 .left-menu ul li a {
   text-decoration: none;
 }
-/* line 29, ../sass/custom-styles/_menu.scss */
+/* line 28, ../sass/custom-styles/_menu.scss */
 .left-menu ul li a:hover {
   text-decoration: underline;
   color: #969696;
 }
-/* line 37, ../sass/custom-styles/_menu.scss */
+/* line 36, ../sass/custom-styles/_menu.scss */
 .left-menu h3 {
   font-size: 18px;
   color: #666666;
@@ -476,7 +488,7 @@ p {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .footer:after {
   content: " ";
   display: block;
@@ -487,7 +499,7 @@ p {
 .footer-module {
   padding: 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   /* line 10, ../sass/custom-styles/_footer.scss */
   .footer-module {
     width: 20%;

@@ -9,7 +9,7 @@
 
 .footer-module {
 	padding: 20px;
-	@include breakpoint (600px) {
+	@include breakpoint (800px) {
 		@include span(20%);
 		margin: 2.5%;
 	}	
