@@ -20,6 +20,7 @@
 					
 					jQuery('.menu_click').click( function () {
 						
+						if(jQuery('.left-menu .menu').css('display')=='none')
 						if(jQuery('.left-menu .menu').css('display')=='none'){
 							clearTimeout(jQuery.data(this,'timer'));
 							jQuery('.left-menu .menu').stop(true,true).slideDown(200);
@@ -67,7 +68,7 @@
 			<div class="left-module">
 				<!-- Меню -->
 				<div class="left-menu">
-					<h3 class="menu_click"><img src="img/menu_list.png">Меню</h3>
+					<h3 class="menu_click"><!-- <img src="img/menu_list.png">-->☰&nbsp;&nbsp;Меню</h3>
 					<ul class="menu">
 						<li><a href="#">Example menu item1</a></li>
 						<li><a href="#">Example menu item2</a></li>
