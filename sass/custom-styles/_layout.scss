@@ -52,12 +52,11 @@
 }
 
 .menu_click{
-	float: right;
-	width: 24px;
 	cursor: pointer;
-	
-	@include breakpoint (600px){
-		display: none;
-	}
-	
+}
+
+.menu_click img{
+	float: left;
+	width: 24px;
+	margin-right: 10px;
 }

@@ -14,7 +14,7 @@
 	
 	
 		<script type="text/javascript">
-                var bool_menu = true;
+
                 // Выпадающее меню
                 jQuery(document).ready(function(){
 					
@@ -28,9 +28,6 @@
 								jQuery('.left-menu .menu').stop(true,true).slideUp(200);
 							}, this), 100));
 						}
-
-						if(bool_menu) bool_menu = false;
-						else bool_menu = true;
 
 
 					});
@@ -70,7 +67,7 @@
 			<div class="left-module">
 				<!-- Меню -->
 				<div class="left-menu">
-					<h3>Меню<img class="menu_click" src="img/menu_list.png"></h3>
+					<h3 class="menu_click"><img src="img/menu_list.png">Меню</h3>
 					<ul class="menu">
 						<li><a href="#">Example menu item1</a></li>
 						<li><a href="#">Example menu item2</a></li>

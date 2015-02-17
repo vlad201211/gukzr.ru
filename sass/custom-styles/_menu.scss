@@ -5,13 +5,13 @@
 	background-color: $color_main4;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
-	padding-bottom: 20px;
 	
 	
 	
 	ul{
 		padding: 10px;
 		display: none;
+		padding-bottom: 30px;
 		@include breakpoint (600px){
 			display: block;
 		}
