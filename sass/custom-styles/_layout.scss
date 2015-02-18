@@ -39,14 +39,14 @@
 	}
 }
 
-.menu_click {
+.js-menuToggle {
 	cursor: pointer;
 	@include breakpoint (600px){
 		cursor: default;
 	}
 }
 
-.menu_click span {
+.js-menuToggle span {
 	float: left;
 	margin-right: 10px;
 	display: block;

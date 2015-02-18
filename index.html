@@ -19,7 +19,7 @@
 			if(jQuery('.menu h3 span').css('display')=='block')
 			jQuery('.menu ul').css('display', 'none');
 			
-			jQuery('.menu_click').click( function () {
+			jQuery('.js-menuToggle').click( function () {
 				
 				if(jQuery('.menu h3 span').css('display')=='block')
 				if(jQuery('.menu ul').css('display')=='none'){
@@ -65,7 +65,7 @@
 			<div class="page__aside">
 				<!-- Меню -->
 				<div class="menu">
-					<h3 class="menu_click"><!-- <img src="img/menu_list.png">--><span>☰</span>Меню</h3>
+					<h3 class="js-menuToggle"><span>☰</span>Меню</h3>
 					<ul>
 						<li><a href="#">Example menu item1</a></li>
 						<li><a href="#">Example menu item2</a></li>

@@ -192,25 +192,25 @@ p {
 }
 
 /* line 42, ../sass/custom-styles/_layout.scss */
-.menu_click {
+.js-menuToggle {
   cursor: pointer;
 }
 @media (min-width: 600px) {
   /* line 42, ../sass/custom-styles/_layout.scss */
-  .menu_click {
+  .js-menuToggle {
     cursor: default;
   }
 }
 
 /* line 49, ../sass/custom-styles/_layout.scss */
-.menu_click span {
+.js-menuToggle span {
   float: left;
   margin-right: 10px;
   display: block;
 }
 @media (min-width: 600px) {
   /* line 49, ../sass/custom-styles/_layout.scss */
-  .menu_click span {
+  .js-menuToggle span {
     display: none;
   }
 }
