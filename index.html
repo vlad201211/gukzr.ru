@@ -13,30 +13,30 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	
 	
-		<script type="text/javascript">
+	<script type="text/javascript">
 
-                // Выпадающее меню
-                jQuery(document).ready(function(){
-					
-					if(jQuery('.left-menu h3 span').css('display')=='block')
-					jQuery('.left-menu ul').css('display', 'none');
-					
-					jQuery('.menu_click').click( function () {
-						
-						if(jQuery('.left-menu h3 span').css('display')=='block')
-						if(jQuery('.left-menu .menu').css('display')=='none'){
-							clearTimeout(jQuery.data(this,'timer'));
-							jQuery('.left-menu .menu').stop(true,true).slideDown(200);
-						}else{
-							jQuery.data(this,'timer', setTimeout(jQuery.proxy(function() {
-								jQuery('.left-menu .menu').stop(true,true).slideUp(200);
-							}, this), 100));
-						}
-
-
-					});
-                });
-		</script>
+		// Выпадающее меню
+		jQuery(document).ready(function(){
+			
+			if(jQuery('.left-menu h3 span').css('display')=='block')
+			jQuery('.left-menu ul').css('display', 'none');
+			
+			jQuery('.menu_click').click( function () {
+				
+				if(jQuery('.left-menu h3 span').css('display')=='block')
+				if(jQuery('.left-menu .menu').css('display')=='none'){
+					clearTimeout(jQuery.data(this,'timer'));
+					jQuery('.left-menu .menu').stop(true,true).slideDown(200);
+				}else{
+					jQuery.data(this,'timer', setTimeout(jQuery.proxy(function() {
+						jQuery('.left-menu .menu').stop(true,true).slideUp(200);
+					}, this), 100));
+				}
+		
+		
+			});
+		});
+	</script>
 	
 	
 </head>
