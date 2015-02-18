@@ -7,21 +7,19 @@ html {
 	box-sizing: inherit;
 }
 
-
-
 h3{
 	line-height: 25px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6 {
 	font-family: $fontHeaders;
 }
 
-a{
+a {
 	color: $color_main2;
 }
 
-body{
+body {
     font-family: Arial,Helvetica,sans-serif;
 	background-image: url("../img/body_bg_default.png");
 	line-height: 18px;
@@ -29,6 +27,8 @@ body{
 	margin: 0 2%;
 }
 
-p{
-    line-height: 18px;
+/*
+p {
+	line-height: 18px;
 }
+*/

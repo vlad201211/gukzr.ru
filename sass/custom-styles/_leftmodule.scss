@@ -1,8 +1,8 @@
-.page__aside{
+.page__aside {
 
 }
 
-.page__rows{
+.page__rows {
 	
 	@include container;
 	@include breakpoint (600px) {
@@ -16,7 +16,7 @@
 	padding-top: 10px;
 	
 	
-	h3{
+	h3 {
 		font-size: 18px;
 		color: $color_main3;
 		padding: 10px;
@@ -26,16 +26,16 @@
 		border-right: 1px solid $color_main1;
 	}
 	
-	p{
+	p {
 		padding-right: 10px;
 	}
 	
-	.row{
+	.row {
 		margin-bottom: 30px;
 		padding-left: 10px;
 	}
 	
-	img{
+	img {
 		margin: 0px 10px 10px 0px;
 		float: left;
 		max-width: 100%;
