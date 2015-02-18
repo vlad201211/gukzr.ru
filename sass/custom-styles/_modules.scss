@@ -2,7 +2,7 @@
 
 }
 
-.page__rows {
+.modules {
 	
 	@include container;
 	@include breakpoint (600px) {
@@ -11,10 +11,14 @@
 	
 	background-color: $color_main8;
 	margin-top: 10px;
-	background-image: url("../img/module_bg_default.png");
+	background-color: $color_main10;
 	float: left;
 	padding-top: 10px;
 	
+	
+	.modules__item {
+		margin-bottom: 30px;
+		padding-left: 10px;
 	
 	h3 {
 		font-size: 18px;
@@ -30,15 +34,13 @@
 		padding-right: 10px;
 	}
 	
-	.row {
-		margin-bottom: 30px;
-		padding-left: 10px;
-	}
+
 	
 	img {
 		margin: 0px 10px 10px 0px;
 		float: left;
 		max-width: 100%;
 	}
+}
 	
 }

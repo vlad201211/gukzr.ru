@@ -1,31 +1,31 @@
 /* Левое меню */
-.menu{
+.menu {
 	float: left;
 	width: 100%; 
 	background-color: $color_main4;
 	margin-top: 10px;
-	background-image: url("../img/module_bg_default.png");
+	background-color: $color_main10;
 	
 	
 	
-	ul{
+	ul {
 		padding: 10px;
 		padding-bottom: 30px;
 		@include breakpoint (600px){
 			display: block!important;
 		}
 		
-		li{
+		li {
 			border-bottom: 1px solid $color_main5;
 			list-style: outside none none;
 			padding-left: 10px;
 			line-height: 25px;
 
-			a{
+			a {
 				text-decoration: none;
 			}
 			
-			a:hover{
+			a:hover {
 				text-decoration: underline;
 				color: $color_main6;
 			}
@@ -33,7 +33,7 @@
 	}
 	
 	
-	h3{
+	h3 {
 		font-size: 18px;
 		color: $color_main3;
 		padding: 10px;

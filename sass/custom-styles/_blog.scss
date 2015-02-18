@@ -3,47 +3,35 @@
 	margin-top: 10px;
 }
 
-.blog{
+.blog {
 	margin-bottom: 20px;
-	padding-left: 10px;
 	float: left;
-}
-
-.blog img{
-	border: 0px none;
-	float: left;
-	margin: 0px 10px 10px 0px;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	width: 84px;
-}
-
-.blog h3{
-	color: $color_main2;
-	font-size: 20px;
-	border-bottom: 1px solid $color_main1;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	padding-bottom: 10px;
-}
-
-.blog a{
-	text-decoration: none;
-	color: $color_main2;
-	font-size: 24px;
-}
-
-.blog a:hover{
-	text-decoration: underline;
-}
-
-.news h2{
-    font-size: 18px;
-    color: $color_main3;
-    padding: 10px 10px 10px 20px;
-    margin-bottom: 10px;
-    background-image: url("../img/module_bg_default.png");
-    border-bottom: 1px solid $color_main1;
-    border-right: 1px solid $color_main1;
+	
+	img {
+		border: 0px none;
+		float: left;
+		margin: 0px 10px 10px 0px;
+		vertical-align: middle;
+		max-width: 100%;
+	}
+	
+	h3 {
+		color: $color_main2;
+		font-size: 20px;
+		border-bottom: 1px solid $color_main1;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	a {
+		text-decoration: none;
+		color: $color_main2;
+		font-size: 24px;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
 }

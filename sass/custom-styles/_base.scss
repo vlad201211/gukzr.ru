@@ -7,7 +7,7 @@ html {
 	box-sizing: inherit;
 }
 
-h3{
+h3 {
 	line-height: 25px;
 }
 
@@ -21,7 +21,7 @@ a {
 
 body {
     font-family: Arial,Helvetica,sans-serif;
-	background-image: url("../img/body_bg_default.png");
+	background-color: $color_main12;
 	line-height: 18px;
 	font-size: 13px;
 	margin: 0 2%;

@@ -33,7 +33,7 @@
 .page__content {
 	margin-right: 0; 
 	margin-top: 10px;
-	@include span(12 of 12);
+	@include container;
 	@include breakpoint (600px){
 		@include span(8 of 12 last); 
 	}
@@ -53,5 +53,4 @@
 	@include breakpoint (600px){
 		display: none;
 	}
-	
 }
