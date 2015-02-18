@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
+	<title>DXLAB</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,18 +18,18 @@
 		// Выпадающее меню
 		jQuery(document).ready(function(){
 			
-			if(jQuery('.left-menu h3 span').css('display')=='block')
-			jQuery('.left-menu ul').css('display', 'none');
+			if(jQuery('.menu h3 span').css('display')=='block')
+			jQuery('.menu ul').css('display', 'none');
 			
 			jQuery('.menu_click').click( function () {
 				
-				if(jQuery('.left-menu h3 span').css('display')=='block')
-				if(jQuery('.left-menu .menu').css('display')=='none'){
+				if(jQuery('.menu h3 span').css('display')=='block')
+				if(jQuery('.menu ul').css('display')=='none'){
 					clearTimeout(jQuery.data(this,'timer'));
-					jQuery('.left-menu .menu').stop(true,true).slideDown(200);
+					jQuery('.menu ul').stop(true,true).slideDown(200);
 				}else{
 					jQuery.data(this,'timer', setTimeout(jQuery.proxy(function() {
-						jQuery('.left-menu .menu').stop(true,true).slideUp(200);
+						jQuery('.menu ul').stop(true,true).slideUp(200);
 					}, this), 100));
 				}
 		
@@ -44,21 +44,17 @@
 <body>
 	
 	<!-- Основной div -->
-	<div id="wrapper_fullscreen">
+	<div class="layout">
 		<!-- Шапка -->
-		<div class="layouts-header">
-			<div class="layouts-header-top">
+		<div class="header">
+			<!-- Лого -->
+			<div class="header__logo">
+				<img src="img/logo.png" alt="" />
+			</div>
 				
-				<!-- Лого -->
-				<div class="logo-header">
-					<img src="img/logo.png" alt="" />
-				</div>
-				
-				<!-- Инфо -->
-				<div class="info-header">
-					<p><strong>Телефон: </strong>8-999-888-99-99</p>
-				</div>
-				
+			<!-- Инфо -->
+			<div class="header__contacts">
+				<p><strong>Телефон: </strong>8-999-888-99-99</p>
 			</div>
 		</div>
 			
@@ -67,48 +63,44 @@
 			<img src="img/banner.png" alt="" />
 		</div>
 			
-		<div class="page">	
-			<div class="left-module">
+		<div class="page">
+			<div class="page__aside">
 				<!-- Меню -->
-				<div class="left-menu">
+				<div class="menu">
 					<h3 class="menu_click"><!-- <img src="img/menu_list.png">--><span>☰</span>Меню</h3>
-					<ul class="menu">
+					<ul>
 						<li><a href="#">Example menu item1</a></li>
 						<li><a href="#">Example menu item2</a></li>
 						<li><a href="#">Example menu item3</a></li>
 						<li><a href="#">Example menu item4</a></li>
 					</ul>
 				</div>
-
-				
-				
-			
 			</div>
 			
 			<!-- Контент -->
-			<div class="content">
+			<div class="page__content content">
 			
-				<div class="introtext">
+				<div class="page__introtext introtext">
 					<h2>Контент</h2>
 					<p><img src="img/4.png">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum</p>
 				</div>
 			
 				<!-- Новости -->
-				<div class="news">
+				<div class="page__news news">
 					
 					<h2>Новости</h2>
 					
-					<div class="blog">
+					<div class="page__blog blog">
 						<h3><a href="#"> Joomla!</a></h3>
 						<p><img src="img/11.png">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eroset accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
 					</div>
 					
-					<div class="blog">
+					<div class="page__blog blog">
 						<h3><a href="#"> Joomla!</a></h3>
 						<p><img src="img/11.png">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eroset accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
 					</div>
 					
-					<div class="blog">
+					<div class="page__blog blog">
 						<h3><a href="#"> Joomla!</a></h3>
 						<p><img src="img/11.png">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eroset accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
 					</div>
@@ -117,7 +109,7 @@
 			
 			</div>
 			
-							<div class="left-modules">
+				<div class="page__rows">
 
 					<div class="row">
 						<h3>Left Modules</h3>
@@ -146,37 +138,40 @@
 	<!-- Подвал -->
 	<div class="footer">
 		
-		<div class="footer-module">
-		<h3>Module Footer1</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+		<div class="footer__columns">
+			<div class="column">
+			<h3>Module Footer1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="column">
+			<h3>Module Footer1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="column">
+			<h3>Module Footer1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="column">
+			<h3>Module Footer1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+			</div>
 		</div>
 		
-		<div class="footer-module">
-		<h3>Module Footer1</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
-		</div>
 		
-		<div class="footer-module">
-		<h3>Module Footer1</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
-		</div>
-		
-		<div class="footer-module">
-		<h3>Module Footer1</h3>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
-		</div>
-		
-		
-		<div id="footer-menu">
-			<ul class="menu">
+		<div class="footer__menu">
+			<ul>
 				<li class="item-193 first"><a href="#">Home</a></li>
 				<li class="item-192"><a href="#">More Templates</a></li>
 				<li class="item-191"><a href="#">Contact Us</a></li>
 				<li class="item-190"><a href="#" target="_blank">Download Joomla!</a></li>
 			</ul>
+			
+			<div class="copyright">Copyright (c) 2014. Your company name here</div>
+			
 		</div>
-		
-		<div id="footer-copyright">Copyright (c) 2014. Your company name here</div>
 		
 	</div>
 	

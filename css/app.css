@@ -98,77 +98,73 @@ p {
 }
 
 /* line 1, ../sass/custom-styles/_layout.scss */
-#wrapper_fullscreen {
+.layout {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
   padding: 0px 1em 20px 1em;
   margin-top: 10px;
+  overflow: auto;
   border-radius: 10px 10px 0px 0px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-#wrapper_fullscreen:after {
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.layout:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/*
-.container-fluid {
-	@include container;
-	background-color: $color_main7;
-	padding: 0px 1em 20px 1em;
-	float: left;
-	margin-top: 10px;
-	border-radius: 10px 10px 0px 0px;
-}
-*/
-/* line 21, ../sass/custom-styles/_layout.scss */
+/* line 10, ../sass/custom-styles/_layout.scss */
 .banner {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  margin-right: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 25, ../sass/custom-styles/_layout.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.banner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 14, ../sass/custom-styles/_layout.scss */
 .banner img {
   width: 100%;
   box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.7);
   padding: 2px;
 }
 
-/* line 32, ../sass/custom-styles/_layout.scss */
+/* line 21, ../sass/custom-styles/_layout.scss */
 .page {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .page:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 37, ../sass/custom-styles/_layout.scss */
-.left-module {
+/* line 25, ../sass/custom-styles/_layout.scss */
+.page__aside {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
 @media (min-width: 600px) {
-  /* line 37, ../sass/custom-styles/_layout.scss */
-  .left-module {
+  /* line 25, ../sass/custom-styles/_layout.scss */
+  .page__aside {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
 }
 
-/* line 45, ../sass/custom-styles/_layout.scss */
-.content {
+/* line 33, ../sass/custom-styles/_layout.scss */
+.page__content {
   margin-right: 0;
   margin-top: 10px;
   width: 100%;
@@ -177,33 +173,33 @@ p {
   margin-right: 0;
 }
 @media (min-width: 600px) {
-  /* line 45, ../sass/custom-styles/_layout.scss */
-  .content {
+  /* line 33, ../sass/custom-styles/_layout.scss */
+  .page__content {
     width: 66.10169%;
     float: right;
     margin-right: 0;
   }
 }
 
-/* line 54, ../sass/custom-styles/_layout.scss */
+/* line 42, ../sass/custom-styles/_layout.scss */
 .menu_click {
   cursor: pointer;
 }
 @media (min-width: 600px) {
-  /* line 54, ../sass/custom-styles/_layout.scss */
+  /* line 42, ../sass/custom-styles/_layout.scss */
   .menu_click {
     cursor: default;
   }
 }
 
-/* line 61, ../sass/custom-styles/_layout.scss */
+/* line 49, ../sass/custom-styles/_layout.scss */
 .menu_click span {
   float: left;
   margin-right: 10px;
   display: block;
 }
 @media (min-width: 600px) {
-  /* line 61, ../sass/custom-styles/_layout.scss */
+  /* line 49, ../sass/custom-styles/_layout.scss */
   .menu_click span {
     display: none;
   }
@@ -211,39 +207,31 @@ p {
 
 /* ╨Т╨╡╤А╤Е header */
 /* line 2, ../sass/custom-styles/_header.scss */
-.layouts-header {
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  margin-right: 0;
-  margin-top: 10px;
-}
-
-/* line 8, ../sass/custom-styles/_header.scss */
-.layouts-header-top {
+.header {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-right: 0;
+  margin-top: 10px;
   background-image: url("../img/header_bg_default.jpg");
   background-color: transparent;
   min-height: 70px;
   margin-bottom: 10px;
   padding: 5px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.layouts-header-top:after {
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.header:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 17, ../sass/custom-styles/_header.scss */
-.logo-header {
+/* line 13, ../sass/custom-styles/_header.scss */
+.header__logo {
   float: left;
 }
-
-/* line 21, ../sass/custom-styles/_header.scss */
-.logo-header img {
+/* line 15, ../sass/custom-styles/_header.scss */
+.header__logo img {
   width: 100%;
   float: left;
   margin-left: 0;
@@ -251,37 +239,12 @@ p {
   max-width: 100%;
 }
 
-/* line 28, ../sass/custom-styles/_header.scss */
-.info-header {
+/* line 21, ../sass/custom-styles/_header.scss */
+.header__contacts {
   font-size: 18px;
   color: #666666;
   padding: 10px;
   margin: 10px;
-}
-
-/* line 35, ../sass/custom-styles/_header.scss */
-.info-header {
-  	/*
-  	@include breakpoint($ExtraSmallDevices) {
-  		@include span(last 12 of 12);
-  		margin-right: 0;
-  	}
-  	
-  	@include breakpoint($SmallDevices) {
-  		@include span(last 6 of 12);
-  		margin-right: 0;
-  	}
-  
-  	@include breakpoint($MediumDevices) {
-  		@include span(last 3 of 12);
-  		margin-right: 0;
-  		display: none;
-  	}
-    
-  	@include breakpoint($LargeDevices) {
-  		@include span(last 3 of 12);
-  		margin-right: 0;
-  	}*/
   width: 100%;
   float: left;
   margin-left: 0;
@@ -290,8 +253,8 @@ p {
   white-space: nowrap;
 }
 @media (min-width: 750px) {
-  /* line 35, ../sass/custom-styles/_header.scss */
-  .info-header {
+  /* line 21, ../sass/custom-styles/_header.scss */
+  .header__contacts {
     width: 32.20339%;
     float: right;
     margin-right: 0;
@@ -301,7 +264,7 @@ p {
 
 /* ╨Ы╨╡╨▓╨╛╨╡ ╨╝╨╡╨╜╤О */
 /* line 2, ../sass/custom-styles/_menu.scss */
-.left-menu {
+.menu {
   float: left;
   width: 100%;
   background-color: #dec4c4;
@@ -309,34 +272,34 @@ p {
   background-image: url("../img/module_bg_default.png");
 }
 /* line 11, ../sass/custom-styles/_menu.scss */
-.left-menu ul {
+.menu ul {
   padding: 10px;
   padding-bottom: 30px;
 }
 @media (min-width: 600px) {
   /* line 11, ../sass/custom-styles/_menu.scss */
-  .left-menu ul {
-    display: block;
+  .menu ul {
+    display: block !important;
   }
 }
 /* line 18, ../sass/custom-styles/_menu.scss */
-.left-menu ul li {
+.menu ul li {
   border-bottom: 1px solid #dddddd;
   list-style: outside none none;
   padding-left: 10px;
   line-height: 25px;
 }
 /* line 24, ../sass/custom-styles/_menu.scss */
-.left-menu ul li a {
+.menu ul li a {
   text-decoration: none;
 }
 /* line 28, ../sass/custom-styles/_menu.scss */
-.left-menu ul li a:hover {
+.menu ul li a:hover {
   text-decoration: underline;
   color: #969696;
 }
 /* line 36, ../sass/custom-styles/_menu.scss */
-.left-menu h3 {
+.menu h3 {
   font-size: 18px;
   color: #666666;
   padding: 10px;
@@ -347,7 +310,32 @@ p {
 }
 
 /* line 5, ../sass/custom-styles/_leftmodule.scss */
-.left-modules h3 {
+.page__rows {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bda9a9;
+  margin-top: 10px;
+  background-image: url("../img/module_bg_default.png");
+  float: left;
+  padding-top: 10px;
+}
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.page__rows:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 600px) {
+  /* line 5, ../sass/custom-styles/_leftmodule.scss */
+  .page__rows {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 19, ../sass/custom-styles/_leftmodule.scss */
+.page__rows h3 {
   font-size: 18px;
   color: #666666;
   padding: 10px;
@@ -356,55 +344,30 @@ p {
   border-bottom: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
-
-/* line 15, ../sass/custom-styles/_leftmodule.scss */
-.left-modules {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #bda9a9;
-  margin-top: 10px;
-  background-image: url("../img/module_bg_default.png");
-  float: left;
-  padding-top: 10px;
-}
-@media (min-width: 600px) {
-  /* line 15, ../sass/custom-styles/_leftmodule.scss */
-  .left-modules {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-}
-
-/* line 27, ../sass/custom-styles/_leftmodule.scss */
-.left-modules p {
+/* line 29, ../sass/custom-styles/_leftmodule.scss */
+.page__rows p {
   padding-right: 10px;
 }
-
-/* line 31, ../sass/custom-styles/_leftmodule.scss */
-.left-modules .row {
+/* line 33, ../sass/custom-styles/_leftmodule.scss */
+.page__rows .row {
   margin-bottom: 30px;
   padding-left: 10px;
 }
-
-/* line 36, ../sass/custom-styles/_leftmodule.scss */
-.left-modules img {
+/* line 38, ../sass/custom-styles/_leftmodule.scss */
+.page__rows img {
   margin: 0px 10px 10px 0px;
   float: left;
   max-width: 100%;
 }
 
-/* line 5, ../sass/custom-styles/_content.scss */
+/* line 3, ../sass/custom-styles/_content.scss */
 .content img {
   border: 0px none;
   float: left;
   margin: 0px 10px 10px 0px;
   max-width: 100%;
 }
-
-/* line 12, ../sass/custom-styles/_content.scss */
+/* line 10, ../sass/custom-styles/_content.scss */
 .content h2 {
   font-size: 18px;
   color: #666666;
@@ -414,8 +377,7 @@ p {
   border-right: 1px solid #cccccc;
   padding: 10px 10px 10px 20px;
 }
-
-/* line 22, ../sass/custom-styles/_content.scss */
+/* line 20, ../sass/custom-styles/_content.scss */
 .content p {
   padding-left: 10px;
 }
@@ -488,7 +450,7 @@ p {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-/* line 12, C:/Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .footer:after {
   content: " ";
   display: block;
@@ -496,51 +458,59 @@ p {
 }
 
 /* line 10, ../sass/custom-styles/_footer.scss */
-.footer-module {
+.footer__columns {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.footer__columns:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 14, ../sass/custom-styles/_footer.scss */
+.column {
   padding: 20px;
 }
 @media (min-width: 800px) {
-  /* line 10, ../sass/custom-styles/_footer.scss */
-  .footer-module {
+  /* line 14, ../sass/custom-styles/_footer.scss */
+  .column {
     width: 20%;
     float: left;
     margin-right: 5.26316%;
     margin: 2.5%;
   }
 }
-
-/* line 18, ../sass/custom-styles/_footer.scss */
-.footer-module h3 {
+/* line 21, ../sass/custom-styles/_footer.scss */
+.column h3 {
   font-size: 14px;
   color: #ffffff;
 }
-
-/* line 23, ../sass/custom-styles/_footer.scss */
-.footer-module p {
+/* line 26, ../sass/custom-styles/_footer.scss */
+.column p {
   color: #999999;
 }
 
-/* line 27, ../sass/custom-styles/_footer.scss */
-#footer-menu {
+/* line 31, ../sass/custom-styles/_footer.scss */
+.footer__menu {
   clear: both;
   text-align: center;
 }
-
-/* line 32, ../sass/custom-styles/_footer.scss */
-#footer-menu ul {
+/* line 35, ../sass/custom-styles/_footer.scss */
+.footer__menu ul {
   margin: 0px;
   line-height: normal;
 }
-
-/* line 37, ../sass/custom-styles/_footer.scss */
-#footer-menu li {
+/* line 40, ../sass/custom-styles/_footer.scss */
+.footer__menu li {
   display: inline;
   margin: 0px;
   padding: 0px;
 }
-
-/* line 43, ../sass/custom-styles/_footer.scss */
-#footer-menu li a {
+/* line 46, ../sass/custom-styles/_footer.scss */
+.footer__menu li a {
   display: inline;
   line-height: normal;
   padding: 0px 10px;
@@ -548,9 +518,8 @@ p {
   color: #ffffff;
   font-size: 85%;
 }
-
-/* line 52, ../sass/custom-styles/_footer.scss */
-#footer-copyright {
+/* line 55, ../sass/custom-styles/_footer.scss */
+.footer__menu .copyright {
   text-align: center;
   font-size: 85%;
   color: #666666;

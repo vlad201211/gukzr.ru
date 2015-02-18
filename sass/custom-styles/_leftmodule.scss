@@ -1,40 +1,44 @@
-.left-module{
+.page__aside{
 
 }
 
-.left-modules h3{
-	font-size: 18px;
-	color: $color_main3;
-	padding: 10px;
-	margin: 0px 10px 10px 0px;
-	background-color: $color_main7;
-	border-bottom: 1px solid $color_main1;
-	border-right: 1px solid $color_main1;
-}
-
-.left-modules {
-	@include span(12 of 12);
+.page__rows{
+	
+	@include container;
 	@include breakpoint (600px) {
 		@include span(4 of 12);
 	}
+	
 	background-color: $color_main8;
 	margin-top: 10px;
 	background-image: url("../img/module_bg_default.png");
 	float: left;
 	padding-top: 10px;
-}
-
-.left-modules p{
-	padding-right: 10px;
-}
-
-.left-modules .row{
-	margin-bottom: 30px;
-	padding-left: 10px;
-}
-
-.left-modules img{
-	margin: 0px 10px 10px 0px;
-	float: left;
-	max-width: 100%;
+	
+	
+	h3{
+		font-size: 18px;
+		color: $color_main3;
+		padding: 10px;
+		margin: 0px 10px 10px 0px;
+		background-color: $color_main7;
+		border-bottom: 1px solid $color_main1;
+		border-right: 1px solid $color_main1;
+	}
+	
+	p{
+		padding-right: 10px;
+	}
+	
+	.row{
+		margin-bottom: 30px;
+		padding-left: 10px;
+	}
+	
+	img{
+		margin: 0px 10px 10px 0px;
+		float: left;
+		max-width: 100%;
+	}
+	
 }
