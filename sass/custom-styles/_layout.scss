@@ -23,7 +23,7 @@
 }
 
 .page__aside {
-	@include span(12 of 12);
+	@include container;
 	@include breakpoint (600px){
 		@include span(4 of 12);
 	}
